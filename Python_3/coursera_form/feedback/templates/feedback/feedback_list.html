@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отзывы</title>
+</head>
+<body>
+    <h1>Отзывы</h1>
+
+    {% for feedback in object_list %}
+        <li>{{ feedback.author }} - {{ feedback.subject }} - {{ feedback.text }}</li>
+    {% empty %}
+        <li>Нет отзывов.</li>
+    {% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+    <body>
+        <h1>Вход</h1>
+
+        {% if next %}
+        <form action="/login/?next={{next}}" method="post">
+        {% else %}
+            <form action="/login/" method="post">
+            {% endif %}
+            {% csrf_token %}
+            {{ form }}
+
+            <input id="submit-btn" type="submit" value="Отправить">
+        </form>
+    </body>
+</html>

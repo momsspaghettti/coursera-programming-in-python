@@ -1,0 +1,62 @@
+.hr {
+height: 40px;
+}
+
+.post {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.post a {
+text-decoration: underline;
+}
+
+.answer {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.avatar {
+margin-top: 10px;
+margin: auto;
+width: 100%;
+max-width: 100px;
+min-width: 30px;
+border-radius: 20%;
+display: block;
+}
+
+.avatar-bar {
+background-image: radial-gradient(#DCDCDC, white);
+}
+
+.up {
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+
+i {
+border: solid black;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 3px;
+}
+
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+
+.tag-list li {
+    display: inline;
+    margin-right: 5px;
+    padding: 4px;
+}
+
+.user-list {
+margin: 2px;
+}
+
+.adapt {
+margin: 2px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormProject</title>
+</head>
+<body>
+    <h1>Форма отзыва</h1>
+    <form method="post" enctype="multipart/form-data" action="/form/">
+        {% csrf_token %}
+        {{ form }}
+        <!--<label for="feedback-text">Отзыв:
+            <input id="feedback-text" type="text" name="text" minlength="10" maxlength="1000" required>
+        </label>
+
+        <label for="feedback-grade">Оценка:
+            <input id="feedback-grade" type="number" name="grade" min="1" max="10" required>
+        </label>
+
+        <label for="feedback-image">Фотография:
+            <input id="feedback-image" type="file" name="image">
+        </label>
+-->
+        <input id="feedback-submit" type="submit">
+    </form>
+    {{ text }}
+    {{ grade }}
+    {{ content }}
+</body>
+</html>
